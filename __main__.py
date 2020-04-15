@@ -42,6 +42,8 @@ helm.Chart("external-dns", helm.ChartOpts(
             "apiToken": api_token,
             "proxied": False,
         },
+        "sources": [ "service", "ingress" ],
+        "logFormat": "json",
         "txtOwnerId": "home.lbrlabs",
     },
     fetch_opts=helm.FetchOpts(

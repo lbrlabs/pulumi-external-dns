@@ -4,7 +4,12 @@ type: kubernetes
 name: default
 
 steps:
-- name: greeting
-  image: docker/whalesay:latest
+- name: preview
+  image: pulumi/pulumi:latest
   commands:
-    - cowsay boo
+    - npm install
+    - pulumi preview --stack digitalocean --non-interactive
+  when:
+    event:
+      include:
+        - pull_request
