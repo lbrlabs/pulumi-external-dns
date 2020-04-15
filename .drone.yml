@@ -9,6 +9,9 @@ steps:
   commands:
     - npm install
     - pulumi preview --stack digitalocean --non-interactive
+  environment:
+    PULUMI_ACCESS_TOKEN:
+      from_secret: PULUMI_ACCESS_TOKEN
   when:
     event:
       include:
