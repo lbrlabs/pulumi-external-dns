@@ -1,0 +1,5 @@
+config:
+  external-dns:api_token:
+    secure: AAABAEFcEu8DJcAVTAZJWGu+JtKvcO97qTbsNLk+nknZcv0etIMkA2fysBYy+myKk0XOvrxejRU+1ku8+o0je92ZD52oQ/Bu
+  external-dns:cluster_project: digitalocean-cluster
+  external-dns:namespace: external-dns

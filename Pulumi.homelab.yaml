@@ -1,0 +1,5 @@
+config:
+  external-dns:api_token:
+    secure: AAABANRe33hmFtr6gnDMbvG7yFRQTalKyiHBV6LHPPhHlvnw7h25pJxlbTv6D+tBMpqku8sbnHrAykKajQWOGZTI8yq95ZQE
+  external-dns:cluster_project: cluster
+  external-dns:namespace: external-dns
