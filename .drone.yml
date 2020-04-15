@@ -7,7 +7,7 @@ steps:
 - name: preview
   image: pulumi/pulumi:latest
   commands:
-    - npm install
+    - pip install
     - pulumi preview --stack digitalocean --non-interactive
   environment:
     PULUMI_ACCESS_TOKEN:
